@@ -27,7 +27,7 @@ public class NetworkUtils {
         }
 
         try {
-            return new URL(MOVIE_BASE_URL+ SORT_TYPE + "?api_key=" + API_KEY);
+            return new URL(MOVIE_BASE_URL + SORT_TYPE + "?api_key=" + API_KEY);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

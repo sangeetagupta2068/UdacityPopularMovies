@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     static public ArrayList<Movie> movies = new ArrayList<>();
     static private boolean POPULARITY = true;
     static private boolean TOP_RATED = false;
-    private MovieAsyncTask movieAsyncTask= new MovieAsyncTask();
+    private MovieAsyncTask movieAsyncTask = new MovieAsyncTask();
 
     RecyclerView movieRecyclerView;
     ProgressBar progressBar;
@@ -138,10 +138,8 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.popularity_sort) {
-            Toast.makeText(this, "Popularity sort", Toast.LENGTH_SHORT).show();
             new MovieAsyncTask().execute(POPULARITY);
         } else if (item.getItemId() == R.id.rating_sort) {
-            Toast.makeText(this, "Rating sort", Toast.LENGTH_SHORT).show();
             new MovieAsyncTask().execute(TOP_RATED);
         }
         return super.onOptionsItemSelected(item);
