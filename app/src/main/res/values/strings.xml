@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">UdacityPopularMovies1</string>
-    <string name="rating_label">Rating:</string>
+    <string name="rating_label">Rating</string>
     <string name="name_label">Movie: </string>
     <string name="release_date_label">Release Date:</string>
     <string name="summary_label">Description:</string>
-    <string name="log_no_internet">No internet connection</string>
     <string name="log_failed_data_retrieval">Couldn\'t load data</string>
     <string name="home_screen_title">Popular Movies</string>
-    <string name="priority_popularity">Popularity</string>
-    <string name="prority_rating">Rating</string>
+    <string name="popularity_label">Popularity</string>
 </resources>

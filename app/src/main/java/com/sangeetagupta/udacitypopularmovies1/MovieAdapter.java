@@ -20,12 +20,12 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     private Context context;
     private final MovieListItemHandler movieListItemHandler;
 
-    public MovieAdapter(Context context,MovieListItemHandler movieListItemHandler) {
+    public MovieAdapter(Context context, MovieListItemHandler movieListItemHandler) {
         this.context = context;
         this.movieListItemHandler = movieListItemHandler;
     }
 
-    public interface MovieListItemHandler{
+    public interface MovieListItemHandler {
         void onMovieItemClick(int index);
     }
 

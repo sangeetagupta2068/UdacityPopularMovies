@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sangeetagupta.udacitypopularmovies1.DetailActivity">
+        <activity android:name="com.sangeetagupta.udacitypopularmovies1.DetailActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

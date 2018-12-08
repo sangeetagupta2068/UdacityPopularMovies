@@ -38,7 +38,7 @@ public class DetailActivity extends AppCompatActivity {
     public void setMovieView() {
         setTitle(MainActivity.movies.get(movieItemIndex).getMovieName());
 
-        movieRatingView.setText(String.format("%s %s", getString(R.string.rating_label), MainActivity.movies.get(movieItemIndex).getMovieRating()));
+        movieRatingView.setText(String.format("%s: %s", getString(R.string.rating_label), MainActivity.movies.get(movieItemIndex).getMovieRating()));
         movieDescriptionView.setText(String.format("%s %s", getString(R.string.summary_label), MainActivity.movies.get(movieItemIndex).getMovieSummary()));
         movieReleaseView.setText(String.format("%s %s", getString(R.string.release_date_label), MainActivity.movies.get(movieItemIndex).getMovieReleaseDate()));
 
